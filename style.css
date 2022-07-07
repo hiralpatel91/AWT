@@ -1,0 +1,20 @@
+body{
+    background: url(image/1.jpeg)no-repeat;
+    background-size: cover;
+}
+form{
+    text-align: center;
+}
+div{
+    height: auto;
+    width: 100px;
+    align:center;
+
+}
+input{
+    border-radius: 8px;
+    margin: 1px;
+}
+input:hover{
+    background-color:white;
+}
