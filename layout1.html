@@ -1,42 +1,90 @@
-<html>
-	<head>
-		
-		<title>Layout 1</title>
-		
-		<style type="text/css">
-			*{font-size:22px;font-weight:bolder;}
-			#R1{background-color:brown;height:50px;padding-top:20px;width:98%;padding-left:2%;margin-bottom:10px;}
-			#R2,#R5{background-color:brown;height:33px;width:100%;padding-top:7px;text-align:center;margin-bottom:10px;}
-			#R3{background-color:brown;height:90px;width:100%;padding-top:60px;text-align:center;margin-bottom:10px;}
-			#R4{height:600px;width:100%;margin-bottom:10px;}
-			#R4C1{width:28%;margin-right:2%;}
-			#R4C2{width:70%;}
-			#R4 div{float:left;height:320px;padding-top:280px;text-align:center;background-color:brown;}
-		</style>
-		
-	</head>
-	<body>
-		<div>
-			<div id="R1">
-				Logo
-			</div>
-			<div id="R2">
-				Navigation
-			</div>
-			<div id="R3">
-				Header/Banner
-			</div>
-			<div id="R4">
-				<div id="R4C1">
-					Side Bar
-				</div>
-				<div id="R4C2">
-					Body Area
-				</div>
-			</div>
-			<div id="R5">
-				Footer
-			</div>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout1</title>
+    <style>
+        .container {
+            margin: 3rem 8rem;
+        }
+
+        #logo {
+            background-color: goldenrod;
+            padding: 3% 5%;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        #nav {
+            background-color:goldenrod;
+            text-align: center;
+            padding: 3% 5%;
+            font-size: large;
+            font-weight: bold;
+        }
+       
+        #header {
+            background-color: goldenrod;
+            font-size: large;
+            font-weight: bold;
+            padding: 10%;
+            text-align: center;
+        }
+        .con1{
+            position: relative;
+            display: flex;
+            
+        }
+
+        #sidebar {
+            background-color: goldenrod;
+            height: 50vh;
+            width: 39vh;
+            margin-right: 2%;
+            display: grid;
+            place-items: center;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        #bodyarea {
+            background-color: goldenrod;
+            height: 50vh;
+            width: 88%;
+            display: grid;
+            place-items: center;
+            font-size: large;
+            font-weight: bold;
+        
+        }
+
+        #footer {
+            background-color: goldenrod;
+            text-align: center;
+            padding: 3% 5%;
+            font-size: large;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="logo">logo</div><br>
+        <div id="nav">navigation</div><br>
+        <div id="header">header</div><br>
+        <div class="con1">
+            <div id="sidebar">sidebar</div><br>
+            <div id="bodyarea">body area</div><br>
+        </div><br>
+        <div id="footer">footer</div><br>
+    </div>
+</body>
+
 </html>
